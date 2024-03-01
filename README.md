@@ -1,3 +1,5 @@
+A set of steps to follow during the reconnaissance stage in external assessments/penetration tests.
+
 # General Information
 ## Know your target
 - Find the company's main domain

@@ -79,7 +79,7 @@ Shodan
 # Subdomains
 We want to find as many subdomains as we can to have as many assets to scan as we can.
 
-    subfinder -silent all -dL domains.txt -o subdomains.csv
+    subfinder -silent -all -dL domains.txt -o subdomains.csv
 
 > - We can also use amass and assetfinder
 > 

@@ -32,7 +32,6 @@ One of the most important tasks - find out as much about acquisitions, mergers, 
 - BuiltWith 
 - DMARC & SPF records
 - LinkedIn job posts
-- Subdomains
 
  # Domains
 Along with finding subsidiaries, this is one of the most important tasks we have - we want to find as many domains belonging to the target company as possible, so that we can find as many assets as we can to scan later on.

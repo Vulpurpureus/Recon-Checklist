@@ -46,6 +46,7 @@ Run a WHOIS lookup of the domains you have, try to find the:
 After we find some of these fields with values, we run them in one of the tools to find other domains registered using them.
 
 **Tools**
+
 whoisxmlapi, reversewhois.io, whoxy.com
 
 **Note:** Reverse WHOIS is not nececerally accurate and can have false positives, so validate what you find.
@@ -54,6 +55,7 @@ whoisxmlapi, reversewhois.io, whoxy.com
 If the company has its unique nameserver(e.g. ns1.tesla.com) we can perform a reverse lookup on its IPs to find all other domains that use this name server.
 
 **Tools**
+
 SecurityTrails
 
 **Note:** If it doesn't belong the company, we still perform the reverse lookup and look for keywords that we think can be belonging to the target company, but beware this is not always accurate and requires validation.
@@ -63,6 +65,7 @@ We perform an IP reverse lookup on IPs we know that belong to the target company
 We can also run a reverse lookup on the company's hosting ips if it doesnt belong to them and search for keywords, exactly like in reverse ns lookup, but again - beware that this is not always accurate.
 
 **Tools**
+
 SecurityTrails
 
 ### Ad/Analytics Relationship 
@@ -76,8 +79,9 @@ We want to find as many subdomains as we can to have as many assets to scan as w
 
     subfinder -silent -s all -dL domains.txt -o subdomains.csv
 
-> We can also use amass and assetfinder
-> Don't forget to insert your API keys in the subfinder config file
+> - We can also use amass and assetfinder
+> 
+> - Don't forget to insert your API keys in the subfinder config file
 
 # IP Ranges
 We want to find as many IP ranges that belong to the company/are used by it to widen our attack surface.
@@ -90,6 +94,7 @@ We primarily want:
 - Databases/tools that collect ranges of IPs from the different databases -  networksdb.io (Collects ranges from different databases)
 - ASNs - [https://bgp.he.net/](https://bgp.he.net/)
 - WHOIS - We can query the databases servers and get every range the company has:
+  
 `    whois -h whois.arin.net <company>
 `
 - For ranges that are not registered under the company name, we can use a normal WHOIS query on the domains/subdomains/IPs and find the range in the WHOIS response.
@@ -134,6 +139,7 @@ You can also scan for misconfigured certificates using:
 5. Pictures taken by the employees/in company locations(from Google/social media)
 
 **Tools**
+
 - Google, Yandex, DuckDuckGo
 - Dirb, dirsearch
 - MobSF (mobile), bearer, semgrep

@@ -113,7 +113,7 @@ Using these assets, we will start scanning to find an opening that will allow us
 **Note:** We can also run --script vuln to execute all scripts that scan for vulnerabilities, if you have too much assets to scan, do it first for interesting interfaces that you suspect are vulnerable. 
 
 3. **gowitness**- We will feed our nmap .xml file to gowitness to take screenshots of all the interfaces we scanned that have open ports:
-    `gowitness nmap -f nmap_output_file.xml --open`
+    `gowitness nmap -f nmap_output_file.xml --open --timeout 60 -N`
  
  4. **Nuclei** - we will scan our assets for critical and high vulnerabilities first, then if nothing is found - continue to the rest.
 
